@@ -1,0 +1,62 @@
+@import url('https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;700&display=swap');
+
+body {
+	color: white;
+	background-color: black;
+	font-family: 'League Spartan', sans-serif;
+	font-size: 1.2em;
+}
+
+#center {
+	position: absolute;
+	width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+	text-align: center;
+	align-items: center;
+	animation: fadeIn 1s ease 0s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		top: 55%;
+	}
+  to {
+		opacity: 1;
+		top: 50%;
+	}
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 4em;
+	margin: 0;
+}
+
+p#description {
+	font-size: 1.2em;
+}
+
+a.icon {
+	text-decoration: none;
+}
+
+a.icon svg {
+	fill: white;
+	width: 2em;
+	height: 2em;
+	padding: 0.7em;
+	margin: 0.2em;
+	background-color: #262626;
+	border-radius: 50%;
+	overflow: visible;
+	transition: 0.3s;
+}
+
+a.icon svg:hover {
+	background-color: #464646;
+	transform: translateY(-10%);
+}
