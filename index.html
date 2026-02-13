@@ -1,0 +1,39 @@
+---
+description: Artist, programmer, wholesome nerd, and professional silly goose.
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Purpzie</title>
+		<meta name="description" content="{{ page.description }}">
+		<meta name="theme-color" content="#000000"/>
+		<meta name="referrer" content="no-referrer">
+		<link rel="stylesheet" href="./main.css">
+	</head>
+	<body>
+		<div id="center">
+			<h1>Purpzie</h1>
+			<p>{{ page.description }}</p>
+			<img id="pfp" src="./assets/birb.png"/>
+			<div id="links">
+				<a class="link" href="https://bsky.app/profile/purpzie.com">
+					{% include icons/bluesky.svg %}
+				</a>
+				<a class="link" href="https://github.com/purpzie">
+					{% include icons/github.svg %}
+				</a>
+				<a class="link" href="https://purpzie-art.tumblr.com/">
+					{% include icons/tumblr.svg %}
+				</a>
+				<a class="link" href="https://ko-fi.com/purpzie">
+					{% include icons/ko-fi.svg %}
+				</a>
+				<a class="link" href="mailto:purpzie@purpzie.com">
+					{% include icons/email.svg %}
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
